@@ -1,0 +1,338 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Home Background */
+.home-background {
+  color: black;
+  background: linear-gradient(to right, #f7c6d7, #e8a0bf); /* Pink gradient background */
+  padding: 20px; /* Padding for the container */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin: 0 auto;
+}
+.home-content{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Welcome Title */
+.welcome-title {
+  width: 100%;
+  height: 600px;
+  background-image: url('./images/home-header.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 60px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center text horizontally */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center text vertically */
+  align-items: center; /* Center text and button horizontally */
+}
+.welcome-title h1 {
+  font-size: 2.5rem; 
+  color:#800020;
+  margin-bottom: 20px; /* Space below heading */
+  text-decoration:underline;
+  text-align: center; /* Center text horizontally */
+}
+.welcome-title p {
+  font-size: 1.25rem;
+  color:whitesmoke ;
+  margin-bottom: 20px 0;
+  padding-left: 10PX;
+  padding-right: 10PX;
+
+}
+.welcome-title .btn {
+  font-size: 1rem;
+  margin-top: 20px; /* Space between text and button */
+}
+
+/* Salon Image */
+.salon-img {
+  border-radius: 10px; /* Rounded corners for image */
+  width: 100%;
+  max-width: 100%; /* Ensure the image does not overflow */
+  height:500px; /* Maintain aspect ratio */
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Service Cards */
+.service-item {
+  display: flex;
+  flex-direction:column;
+  align-items: center; /* Center items horizontally */
+  width: 33%; /* Full width for medium and larger screens */
+  max-width: 100%; /* Ensure items don’t overflow */
+  margin-bottom: 15px; /* Space below each item */
+}
+.service-item img {
+  width: 100%;
+  height:150px; /* Set a fixed height */
+  object-fit: cover; /* Ensures the image covers the entire area without distortion */
+  border-radius: 5px; /* Optional: adds a slight border radius */
+  margin-bottom: 15px; /* Space below image */
+}
+
+.service-card {
+  background-color: rgb(247, 193, 226); /* White background for service cards */
+  border-radius: 5px;
+  margin: 5px;
+  text-align: center; /* Center text */
+  margin-bottom: 20px; /* Space between cards */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition for hover effect */
+}
+
+.service-card:hover {
+  transform: scale(1.05); /* Scale up on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.service-icon {
+  font-size: 3rem; /* Icon size */
+  color: #fe05dd; /* Icon color */
+  margin-bottom: 10px; /* Space below icon */
+}
+
+/* Services Title */
+.services-title {
+  text-align: center;
+  color: black;
+  margin-bottom: 20px; /* Space below title */
+}
+
+/* Button */
+.service-card .btn {
+  display: block;
+  margin: 20px auto; /* Center the "More Services" button */
+  font-size: 1rem;
+  padding: 10px 20px;
+}
+.btn {
+  display: inline-block; /* Allow width adjustments */
+  font-size: 2rem; /* Adjust font size */
+  padding: 4px 8px; /* Padding for the button */
+  border-radius: 5px; /* Rounded corners */
+  text-align: center; /* Center text inside the button */
+}
+
+.btn-primary {
+  background-color: hsla(308, 99%, 51%, 0.326); /* Customize button color */
+  border: 2px solid black; 
+  font-size: 1rem; /* Font size */
+  padding: 8px 12px; /* Reduced padding for smaller width */
+  width: 150px; /* Fixed width for button */
+  margin: 20px auto; /* Center the button */
+  display: block; /* Ensure block display for centering */
+}
+
+.btn-primary:hover {
+  background-color: #e509a0; /* Darker shade for hover effect */
+  text-decoration: none;
+}
+
+/* Why Choose Us */
+.why-choose-us ul {
+  list-style-type:none; /* Remove default bullet points */
+  padding: 0; /* Remove default padding */
+  text-align: center; /* Center the text in the list */
+}
+
+.why-choose-us li {
+  font-size: 1.125rem; /* Consistent font size */
+  margin-bottom: 15px; /* Space between list items */
+  padding: 10px; /* Padding for each list item */
+  background-color: #f9a0db; /* White background for each item */
+  border-radius: 5px; /* Rounded corners for items */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for items */
+  transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition */
+}
+.why-choose-us li i {
+  color: #800020; /* Change icon color */
+  margin-right: 10px; /* Space between icon and text */
+}
+
+.why-choose-us{
+  background-color: #fab2e1; /* Light background color for contrast */
+  padding: 40px 20px; /* Adequate padding */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  text-align: center; /* Center text */
+  color: #333; /* Dark text color for readability */
+  margin-bottom: 40px; /* Space below the section */
+}
+
+.why-choose-us h2 {
+  font-size: 2rem; /* Larger heading size */
+  color: #800020; /* Accent color for the heading */
+  margin-bottom: 20px; /* Space below heading */
+}
+.why-choose-us p {
+  font-size: 1.125rem; /* Slightly larger text size */
+  margin-bottom: 20px; /* Space below paragraph */
+}
+.why-choose-us li:hover {
+  transform: scale(1.02); /* Slightly scale up on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+
+/* Map */
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+/* WhatsApp Icon Styles */
+.whatsapp-icon, .call-icon{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+  z-index: 1100;
+}
+
+.whatsapp-icon {
+  bottom: 90px;
+  right: 20px;
+  background-color: #25D366;
+
+}
+.whatsapp-icon i{
+  color: white;
+  font-size: 59px;
+  }
+
+.whatsapp-icon:hover {
+  background-color: #069887;
+  transform: scale(1.1);
+  text-decoration: none;
+}
+.call-icon{
+  bottom: 20px;
+  right: 20px;
+  background-color: #34B7F1;
+}
+.call-icon i{
+  color: white;
+  font-size: 28px;
+}
+.call-icon:hover {
+  background-color: #0ca8eb;
+  transform: scale(1.1);
+  text-decoration: none;
+}
+
+/* Responsive Adjustments */
+
+/* Mobile Devices */
+@media (max-width: 576px) {
+  .welcome-title {
+    height: 400px; /* Reduced height */
+    padding: 40px 10px;
+  }
+
+  .welcome-title h1 {
+    margin-top: 80px;
+    font-size: 1.8rem; /* Smaller font size */
+  }
+
+  .welcome-title p {
+    font-size: 1rem; /* Smaller font size */
+    padding-left: 5px; /* Adjusted padding */
+    padding-right: 5px; /* Adjusted padding */
+  }
+  .service-item {
+    width: 48%; /* Approximately half the width minus some space for gaps */
+  }
+  .service-item img {
+    height: 120px; /* Reduced height for small screens */
+    width: 100%;
+  }
+
+  .salon-img {
+    height: 250px; /* Reduced height for small screens */
+  }
+}
+
+/* Tablets and Small Desktops */
+@media (min-width: 577px) and (max-width: 768px) {
+  .welcome-title {
+    height: 500px; /* Adjusted height */
+    padding: 50px 15px;
+  }
+
+  .welcome-title h1 {
+    margin-top: 20px;
+    font-size: 2.2rem; /* Adjusted font size */
+  }
+
+  .welcome-title p {
+    font-size: 1.1rem; /* Adjusted font size */
+    padding-left: 20px; /* Adjusted padding */
+    padding-right: 20px; /* Adjusted padding */
+  }
+  .service-item {
+    width: 48%; /* Approximately half the width minus some space for gaps */
+  }
+
+  .service-item img {
+    height: 300px; /* Adjusted height */
+  }
+
+  .salon-img {
+    height: 300px; /* Adjusted height */
+  }
+}
+
+/* Large Screens */
+@media (min-width: 769px) {
+  .welcome-title {
+    height: 600px; /* Default height */
+    padding: 60px 20px;
+  }
+
+  .welcome-title h1 {
+    margin-top: 20px;
+    font-size: 2.5rem; /* Default font size */
+  }
+
+  .welcome-title p {
+    font-size: 1.25rem; /* Default font size */
+    padding-left: 100px; /* Default padding */
+    padding-right: 100px; /* Default padding */
+  }
+
+  .service-item img {
+    height: 300px; /* Default height */
+  }
+
+  .salon-img {
+    height: 300px; /* Default height */
+  }
+}

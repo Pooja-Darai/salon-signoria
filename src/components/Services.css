@@ -1,0 +1,310 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header Image Styles */
+.service-header-image {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-header-image img {
+  margin-top: 100px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Heading on Header Image */
+.header-image-h1 {
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background:linear-gradient(135deg, #e755aa, #c938a5, #a13bbd, #6e3580) ;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 2.6rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  white-space: nowrap;
+  max-width: 90%;
+  overflow: hidden;
+}
+
+/* Services Container */
+.services-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  min-height: 100vh;
+  background-color: #0d0c0c;
+}
+
+
+
+
+/* Sidebar Styles */
+.sidebar {
+  width: 300px;
+  padding: 20px;
+  background-color: #0b0b0b;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.1);
+  border-right: 2px solid #ddd;
+  border-radius: 0 10px 10px 0;
+  top: 0;
+  left: 0;
+  height:auto;
+  z-index: 1000;
+  overflow-y: auto;
+  transform: translateX(0); /* Show sidebar by default */
+  transition: transform 0.3s ease-in-out;
+  padding-top: 105px;
+}
+/* Sidebar Visible State */
+.sidebar.show {
+  transform: translateX(0); /* Slide sidebar into view */
+}
+
+
+/* hamburger menu button */
+.hamburger-menu {
+  font-size: 2rem;
+  cursor: pointer;
+  color: #fd379a;
+  background: none;
+  border: none;
+  margin-top: 15px;
+  padding: 10px;
+  position:fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1500;
+}
+.hamburger-menu{
+  display: none;
+}
+
+/* Sidebar Heading */
+.sidebar h4 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #fd379a;
+}
+
+/* Sidebar List */
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  color: #f8f2f6;
+}
+
+.sidebar li {
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar li.active {
+  background-color: #f2088dd5;
+  color: #f8eef8;
+  font-weight: bold;
+}
+
+.sidebar li:hover {
+  background-color: #f327a1;
+}
+
+/* Content Area */
+.content {
+  padding: 20px;
+  flex: 1;
+  background-color: #020202;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: margin-left 0.3s ease;
+  position: relative;
+}
+
+.content-h1 {
+  display: none;
+}
+
+/* Service Details */
+.service-details {
+  padding: 20px;
+}
+
+.service-details h2 {
+  font-size: 2rem;
+  color: #f718d1;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+.service-details p {
+  font-size: 1rem;
+  color: #f8f2f6;
+  line-height: 1.6;
+}
+
+.service-details h3 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  color: #8c196b;
+  text-decoration: underline;
+}
+
+/* List Items in Service Details */
+.service-details ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  color: #ddd;
+}
+
+.service-details li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #070707;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.service-details li:hover {
+  background-color: #3f3b3efb;
+  transform: scale(1.02);
+}
+
+.service-details li ul {
+  font-size: 1rem;
+  color: #f01683;
+}
+
+/* WhatsApp Icon Styles */
+.whatsapp-icon, .call-icon{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+  z-index: 1100;
+}
+
+.whatsapp-icon {
+  bottom: 90px;
+  right: 20px;
+  background-color: #25D366;
+
+}
+.whatsapp-icon i{
+  color: white;
+  font-size: 59px;
+  }
+
+.whatsapp-icon:hover {
+  background-color: #069887;
+  transform: scale(1.1);
+  text-decoration: none;
+}
+.call-icon{
+  bottom: 20px;
+  right: 20px;
+  background-color: #34B7F1;
+}
+.call-icon i{
+  color: white;
+  font-size: 28px;
+}
+.call-icon:hover {
+  background-color: #0ca8eb;
+  transform: scale(1.1);
+  text-decoration: none;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .services-container {
+    flex-direction:column;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    transform: translateX(-100%); /* Hide sidebar initially */
+  }
+  .sidebar.hidden {
+    display: none; /* Hide by default on small screens */
+
+  }
+
+
+  .sidebar.show {
+    
+    transform: translateX(0); /* Show sidebar when toggled */
+  }
+
+  .content {
+    padding: 20px;
+    flex: 1;
+    background-color: #020202;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: margin-left 0.3s ease;
+    margin-bottom: 60px; /* Add bottom margin to avoid overlap with footer */
+
+  }
+  /* Adjust header image heading for small screens */
+  .header-image-h1 {
+    font-size: 2.2rem; /* Smaller font size for small screens */
+    white-space: normal; /* Allow text to wrap */
+    padding: 0 10px; /* Add padding to avoid text touching the edges */
+  }
+}
+
+/* Additional responsive tweaks for smaller screens */
+@media (max-width: 480px) {
+  .header-image {
+    margin-top: 80px;
+    width: 100%;
+    height:auto;
+  }
+  .sidebar{
+    margin-top: 20px;
+  }
+
+  .service-details h2, .service-details h3 {
+    font-size: 1rem;
+  }
+
+  .service-details p, .service-details li span {
+    font-size: 0.9rem;
+  }
+  .header-image-h1 {
+    font-size: 1rem; /* Further reduce font size */
+    margin-top: 30px;
+    padding:10px; /* Add padding to avoid text touching the edges */
+  }
+  .hamburger-menu{
+    margin-top: 50px;
+  
+  }
+
+}

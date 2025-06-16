@@ -1,0 +1,33 @@
+.footer {
+  position: relative; /* Remove fixed positioning */
+  transition: opacity 0.5s ease-in-out; /* Smooth transition */
+  opacity: 0; /* Start hidden */
+  z-index: 990; /* Ensure it's above other content */
+}
+
+.footer.visible {
+  opacity: 1; /* Show when footer is visible */
+}
+
+.footer.hidden {
+  display: none; /* Completely hide when not visible */
+}
+
+.bg-dark {
+  background-color: #343a40;
+}
+
+.text-white {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+.main-content {
+  padding-bottom: 100px; /* Adjust this to the height of your footer */
+}
