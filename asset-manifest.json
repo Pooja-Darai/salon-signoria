@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/salon-signoria/static/css/main.72b1363d.css",
+    "main.css": "/salon-signoria/static/css/main.30bc02f8.css",
     "main.js": "/salon-signoria/static/js/main.1e60a481.js",
     "static/js/453.345353d6.chunk.js": "/salon-signoria/static/js/453.345353d6.chunk.js",
     "static/media/home-header.jpg": "/salon-signoria/static/media/home-header.9a8c6a507756f6b9429c.jpg",
     "static/media/side-image.jpg": "/salon-signoria/static/media/side-image.7f5c58c55f28dae74fb4.jpg",
     "index.html": "/salon-signoria/index.html",
-    "main.72b1363d.css.map": "/salon-signoria/static/css/main.72b1363d.css.map",
+    "main.30bc02f8.css.map": "/salon-signoria/static/css/main.30bc02f8.css.map",
     "main.1e60a481.js.map": "/salon-signoria/static/js/main.1e60a481.js.map",
     "453.345353d6.chunk.js.map": "/salon-signoria/static/js/453.345353d6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.72b1363d.css",
+    "static/css/main.30bc02f8.css",
     "static/js/main.1e60a481.js"
   ]
 }
