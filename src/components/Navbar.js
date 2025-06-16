@@ -7,8 +7,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg navbar-dark">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
-        <img src={`${process.env.PUBLIC_URL}/assets/salon_logo.png`} alt="Salon Signoria" />
-
+        <img src={`${process.env.PUBLIC_URL}/assets/salon_logo.png`} alt="Salon Signoria" className="logo" />
         </Link>
         <button
           className="navbar-toggler"

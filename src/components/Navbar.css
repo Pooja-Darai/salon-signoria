@@ -13,11 +13,12 @@
 }
 
 .navbar .logo {
-  width: 100%;
+  width: 100px;
   height:80px; /* Adjusted logo size for the smaller navbar */
   margin-right: 20px;/* Adjust logo position if needed */
   
 }
+
 
 /* Ensure the hamburger menu button is visible */
 .navbar .navbar-toggler {
